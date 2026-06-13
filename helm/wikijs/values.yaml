@@ -1,0 +1,20 @@
+replicaCount: 1
+
+image:
+  repository: requarks/wiki
+  tag: "2"
+  pullPolicy: IfNotPresent
+
+service:
+  port: 3000
+
+ingress:
+  host: wiki.samadov.xyz
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 256Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi

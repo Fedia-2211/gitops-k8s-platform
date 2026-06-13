@@ -1,0 +1,14 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Kubernetes secrets
+*.pem
+*.key
+*.crt
+
+# OS files
+.DS_Store
+Thumbs.db

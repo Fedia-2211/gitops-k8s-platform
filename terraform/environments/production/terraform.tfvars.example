@@ -1,0 +1,16 @@
+# Copy this to terraform.tfvars and fill in your values
+# terraform.tfvars is gitignored - never commit real secrets
+
+aws_region   = "us-east-1"
+project_name = "gitops-k8s-platform"
+environment  = "production"
+
+# Find your IP: curl ifconfig.me
+your_ip_cidr = "202.8.9.242/32" # tighten this to YOUR_IP/32 if possible
+
+# Your existing EC2 key pair name (same one from Project 1 works fine)
+key_name = "gitops-k8s-platform-key"
+
+# Postgres password - use a strong password, store in SSM for real use
+db_password = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
