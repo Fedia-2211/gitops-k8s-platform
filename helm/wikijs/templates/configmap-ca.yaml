@@ -5,4 +5,4 @@ metadata:
   namespace: wiki
 data:
   ca.pem: |
-{{ .Files.Get "files/rds-ca.pem" | indent 4 }}
+{{- .Files.Get "files/rds-ca.pem" | nindent 4 }}
