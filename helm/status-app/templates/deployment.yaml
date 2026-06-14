@@ -13,8 +13,20 @@ spec:
       labels:
         app: status-app
     spec:
+      imagePullSecrets:
+      - name: ecr-pull-secret
       containers:
       - name: status-app
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         ports:
         - containerPort: 5000
+        env:
+        - name: APP_VERSION
+          value: "{{ .Values.image.tag }}"
+        resources:
+          requests:
+            cpu: 50m
+            memory: 64Mi
+          limits:
+            cpu: 200m
+            memory: 128Mi
