@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: 176899553634.dkr.ecr.us-east-1.amazonaws.com/gitops-k8s-platform/status-app
-  tag: "latest"
+  tag: "5ed748a9299226837796c0bd12c989688116b54a"
 
 service:
   port: 5000
