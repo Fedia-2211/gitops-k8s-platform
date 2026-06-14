@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  repository: 176899553634.dkr.ecr.us-east-1.amazonaws.com/gitops-k8s-platform/status-app
+  tag: "latest"
+
+service:
+  port: 5000
+
+ingress:
+  host: status.samadov.xyz

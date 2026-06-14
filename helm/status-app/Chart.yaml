@@ -1,0 +1,5 @@
+apiVersion: v2
+name: status-app
+description: CI/CD demo status microservice
+version: 0.1.0
+appVersion: "1.0"
