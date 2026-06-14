@@ -19,63 +19,7 @@
 
 ## Architecture
 
-```
-Developer
-    │
-    │ git push
-    ▼
-GitHub Repository
-    │
-    ├──► GitHub Actions CI
-    │         │ docker build + push
-    │         ▼
-    │       AWS ECR
-    │         │ update image tag in Helm values
-    │         ▼
-    │       GitHub (commit back)
-    │
-    └──► ArgoCD (watches repo, auto-syncs)
-              │
-              ▼
-    ┌─────────────────────────────────────────────┐
-    │              AWS VPC  10.1.0.0/16            │
-    │                                              │
-    │  ┌──────────────────────────────────────┐   │
-    │  │     Public subnet  10.1.1.0/24       │   │
-    │  │                                      │   │
-    │  │  ┌────────────────────────────────┐  │   │
-    │  │  │   k3s server (control-plane)   │  │   │
-    │  │  │   Ubuntu 22.04 · t3.medium     │  │   │
-    │  │  │                                │  │   │
-    │  │  │  ArgoCD · Traefik · cert-mgr   │  │   │
-    │  │  │  Wiki.js · Status App          │  │   │
-    │  │  │  Prometheus · Grafana          │  │   │
-    │  │  └────────────────────────────────┘  │   │
-    │  └──────────────────────────────────────┘   │
-    │                                              │
-    │  ┌──────────────────────────────────────┐   │
-    │  │    Private subnet  10.1.2.0/24       │   │
-    │  │                                      │   │
-    │  │  ┌──────────────┐  ┌──────────────┐ │   │
-    │  │  │  k3s agent   │  │ NAT Gateway  │ │   │
-    │  │  │  t3.small    │  │              │ │   │
-    │  │  │  worker node │  │              │ │   │
-    │  │  └──────────────┘  └──────────────┘ │   │
-    │  └──────────────────────────────────────┘   │
-    │                                              │
-    │  ┌──────────────────────────────────────┐   │
-    │  │  Private subnet 2  10.1.3.0/24       │   │
-    │  │  RDS Postgres 15 · db.t3.micro       │   │
-    │  └──────────────────────────────────────┘   │
-    └─────────────────────────────────────────────┘
-
-    AWS Managed Services (outside VPC)
-    ┌──────────┐  ┌──────────┐  ┌──────────┐
-    │   ECR    │  │ Route 53 │  │ Secrets  │
-    │ Container│  │   DNS    │  │ Manager  │
-    │ Registry │  │          │  │          │
-    └──────────┘  └──────────┘  └──────────┘
-```
+![Architecture Diagram](docs/screenshots/Architecture.png)
 
 ---
 
