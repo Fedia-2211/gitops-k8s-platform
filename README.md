@@ -309,8 +309,11 @@ Grafana at `https://grafana.samadov.xyz` includes 20+ pre-built dashboards:
 ### Grafana — Dashboard overview or alerts
 ![Grafana Overview](docs/screenshots/grafana-overview.png)
 
-### Status App — health / CI/CD demo page
-![Status App Health](docs/screenshots/status-app-health.png)
+### Wiki.js — Live self-hosted wiki
+![Wiki.js Dashboard](docs/screenshots/wikijs-dashboard.png)
+
+### Status App — CI/CD demo (shows live git SHA)
+![Status App Git SHA](docs/screenshots/status-app-git-sha.png)
 
 ---
 
