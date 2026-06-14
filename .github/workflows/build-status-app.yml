@@ -47,6 +47,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
+          git pull --rebase origin main
           git add helm/status-app/values.yaml
           git commit -m "Update status-app image to ${{ env.IMAGE_TAG }}" || echo "No changes"
-          git push
+          git push origin main
