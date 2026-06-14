@@ -306,9 +306,6 @@ Grafana at `https://grafana.samadov.xyz` includes 20+ pre-built dashboards:
 ### Grafana — Node Exporter system metrics
 ![Grafana Node Exporter](docs/screenshots/grafana-node-exporter.png)
 
-### Grafana — Dashboard overview or alerts
-![Grafana Overview](docs/screenshots/grafana-overview.png)
-
 ### Wiki.js — Live self-hosted wiki
 ![Wiki.js Dashboard](docs/screenshots/wikijs-dashboard.png)
 
@@ -365,7 +362,6 @@ Stopped overnight (EC2 + RDS stopped, NAT Gateway left running): ~$1.08/day base
 ## Author
 
 **Firdavs Samadov**
-DevOps & Cloud Engineering Master's Student
-2 years networking (Cisco CCNA 1–3) · 1 year Systems Administration
+DevOps & Cloud Engineering
 
-[GitHub](https://github.com/Fedia-2211) · [LinkedIn](#)
+[GitHub](https://github.com/Fedia-2211) · [LinkedIn](https://www.linkedin.com/in/firdavs-samadov-0b82603b6/)
