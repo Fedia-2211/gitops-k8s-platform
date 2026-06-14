@@ -292,19 +292,25 @@ Grafana at `https://grafana.samadov.xyz` includes 20+ pre-built dashboards:
 ## Screenshots
 
 ### ArgoCD — 3 Applications, All Healthy
-![ArgoCD Applications](docs/screenshots/Screenshot%202026-06-14%20152940.png)
+![ArgoCD Applications](docs/screenshots/argocd-apps.png)
 
 ### AWS ECR — status-app image tags
-![AWS ECR status-app](docs/screenshots/Screenshot%202026-06-14%20153058.png)
+![AWS ECR status-app](docs/screenshots/aws-ecr-status-app.png)
 
 ### AWS EC2 — k3s server and agent instances
-![AWS EC2 Instances](docs/screenshots/Screenshot%202026-06-14%20153124.png)
+![AWS EC2 Instances](docs/screenshots/aws-ec2-instances.png)
 
 ### Grafana — Kubernetes cluster dashboard
-![Grafana Cluster](docs/screenshots/Screenshot%202026-06-14%20153710.png)
+![Grafana Cluster Dashboard](docs/screenshots/grafana-cluster-dashboard.png)
 
 ### Grafana — Node Exporter system metrics
-![Grafana Nodes](docs/screenshots/Screenshot%202026-06-14%20154124.png)
+![Grafana Node Exporter](docs/screenshots/grafana-node-exporter.png)
+
+### Grafana — Dashboard overview or alerts
+![Grafana Overview](docs/screenshots/grafana-overview.png)
+
+### Status App — health / CI/CD demo page
+![Status App Health](docs/screenshots/status-app-health.png)
 
 ---
 
